@@ -17,6 +17,7 @@ class HomeFragment : BaseFragment(), DriverAdapter.Callback {
 
 
     override fun getLayoutId(): Int = R.layout.fragment_home
+
     lateinit var childrenAdapter: ChildrenAdapter
     var childrenList = ArrayList<GetChildrenData>()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
