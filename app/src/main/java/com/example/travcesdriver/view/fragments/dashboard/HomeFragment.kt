@@ -10,6 +10,7 @@ import com.example.travcesdriver.view.activities.base.BaseActivity
 import com.example.travcesdriver.view.adapters.ChildrenAdapter
 import com.example.travcesdriver.view.adapters.DriverAdapter
 import com.example.travcesdriver.view.fragments.base.BaseFragment
+import com.example.travcesdriver.viewModel.UserViewModel
 import kotlinx.android.synthetic.main.fragment_home.*
 
 
@@ -19,6 +20,7 @@ class HomeFragment : BaseFragment(), DriverAdapter.Callback {
     override fun getLayoutId(): Int = R.layout.fragment_home
 
     lateinit var childrenAdapter: ChildrenAdapter
+    lateinit var userViewModel: UserViewModel
     var childrenList = ArrayList<GetChildrenData>()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

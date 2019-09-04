@@ -45,5 +45,4 @@ class UserViewModel(context: Application) : BaseAndroidViewModel(context) {
             }
         })
     }
-
 }
